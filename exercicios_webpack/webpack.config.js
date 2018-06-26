@@ -18,7 +18,7 @@ module.exports = {
             query: {
                 //ES2015 esta depreciado, devemos utilizar env para o uso mais moderno da aplicacao.
                 // presets: ['env'],
-                presets: ['es2015'],
+                presets: ['es2015', 'react'],
                 plugins: ['transform-object-rest-spread']
             }
         }]
