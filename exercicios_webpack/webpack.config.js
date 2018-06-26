@@ -16,8 +16,10 @@ module.exports = {
             loader: 'babel-loader',
             exclude: /node_modules/,
             query: {
-                presets: ['env']
-             // presets: ['es2015']
+                //ES2015 esta depreciado, devemos utilizar env para o uso mais moderno da aplicacao.
+                // presets: ['env'],
+                presets: ['es2015'],
+                plugins: ['transform-object-rest-spread']
             }
         }]
     }
