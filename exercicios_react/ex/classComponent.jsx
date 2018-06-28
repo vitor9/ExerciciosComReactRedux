@@ -1,14 +1,24 @@
-// Quando colocamos o nome de algum import entre chaves, quer dizer
-// que queremos buscar por um componente especifico.
-// Quando chamamos pelo componente fora das chaves, eh porque estamos
-// Chamando o componente que está com a propriedade default e ele
-// vai vir por padrão, só damos mesmo um nome para esse comp. padrao
 import React, { Component } from 'react'
 
 export default class ClassComponente extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = { value: props.initialValue }
+  }
+
+  sum(delta) {
+    this.setState({ value: this.state.value + delta })
+  }
+
   render() {
     return (
-      <h1>{this.props.value}</h1>
+      <div>
+        <h1> { this.props.label } </h1>
+        <h2> { this.state.value } </h2>
+        <button onClick={() => this.sum(-1)}>Dec</button>
+        <button onClick={() => this.sum(1)}>Inc</button>
+      </div>
     )
   }
 }
