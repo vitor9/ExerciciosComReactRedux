@@ -1,10 +1,7 @@
 import React from 'react'
 
-
-// export default () => <h1>Primeiro Componente!</h1>
-// Parenteses e chaves são diferentes, chave é o corpo
-// do método, e os parenteses são uma expressão a ser retornada
-
-export default () => ( 
-    <h1>Primeiro Componente!</h1> 
+export default props => (
+    <h1>Primeiro Componente!</h1>
 )
+
+export const Segundo = props => <h1>Segundo Componente!</h1>
