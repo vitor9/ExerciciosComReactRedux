@@ -1,0 +1,12 @@
+Em member, definimos 2 dados, nome e sobrenome
+Em family, nós dizendos para o React clonar o elemento que ele esta recebendo
+por props(propriedades), e sobrepor este elemento filho por um novo elemento
+que o index.jsx está definindo na sua instanciacao de family.
+
+A unica coisa que a parte filha dessa hierarquia está definindo é apenas o nome do membro,
+enquanto a parte pai da hierarquia está definindo o sobrenome.
+
+Ou seja, este método cloneElement do react, pega o que está recebendo da hierarquia filha, junta e 
+sobrepoe pelo o que está recebendo da hierarquia pai.
+
+cloneElement também funciona apenas para um elemento/unico componente filho
