@@ -1,0 +1,16 @@
+Quando temos um componente na nossa DOM e na nossa pagina, também temos
+o estado do componente no JavaScript.
+
+Temos um estado na DOM e no JavaScript.
+O que alteramos no JavaScript ele atualiza na DOM, e o que
+alteramos na DOM atualiza no JavaScript.
+
+No React, por principios, o estado que é controlado pelo JavaScript é
+a verdadeira forma, é o estado que comanda o que estamos vendo na tela.
+
+Atualizamos o estado do componente pelo JavaScript, e não pela tela/DOM
+Não temos informacao sendo gerada da DOM para o JavaScript.
+
+Estado Controlado e Não Controlado:
+
+A verdade absoluta do dado sempre esta no componente controlado  
