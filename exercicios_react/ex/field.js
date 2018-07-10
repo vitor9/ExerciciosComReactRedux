@@ -24,7 +24,4 @@ function mapDispatchToProps(dispatch) {
     return bindActionCreators({ changeValue }, dispatch)
 }
 
-// Padrao de Projeto chamado Decorator
-// Passamos um field e retornamos o mesmo field, só que decorado com as mesmas funcionalidades
-// mapeado para os estados globais da aplicacao
 export default connect(mapStateToProps, mapDispatchToProps)(Field)
