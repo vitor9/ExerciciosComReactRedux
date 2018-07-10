@@ -6,8 +6,6 @@ import Field from './field'
 import fieldReducer from './fieldReducer'
 
 const reducers = combineReducers({
-    // O campo field é controlado pelo fieldReducer.
-    // Quando uma acao for disparada o field reducer vai ser chamado.
     field: fieldReducer
 })
 
